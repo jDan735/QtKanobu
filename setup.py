@@ -28,7 +28,7 @@ setup(
     ],
     python_requires=">=3",
     install_requires=[
-        "pyqt5"
+        "colorama"
     ],
     entry_points={
         "console_scripts": [
