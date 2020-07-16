@@ -6,41 +6,25 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>321</width>
-    <height>123</height>
+    <width>253</width>
+    <height>107</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>321</width>
-    <height>123</height>
+    <width>221</width>
+    <height>92</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>321</width>
-    <height>123</height>
+    <width>500</width>
+    <height>500</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>80</y>
-     <width>181</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -78,7 +62,7 @@
      <x>0</x>
      <y>0</y>
      <width>41</width>
-     <height>121</height>
+     <height>151</height>
     </rect>
    </property>
    <property name="autoFillBackground">
@@ -93,7 +77,7 @@
     <rect>
      <x>80</x>
      <y>40</y>
-     <width>161</width>
+     <width>211</width>
      <height>31</height>
     </rect>
    </property>
@@ -109,47 +93,27 @@
     <string>Rock VS. paper</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>87</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
   <zorder>widget</zorder>
-  <zorder>buttonBox</zorder>
   <zorder>label_2</zorder>
   <zorder>label</zorder>
   <zorder>label_3</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <resources>
   <include location="resources.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>Dialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>Dialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

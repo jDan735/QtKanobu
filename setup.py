@@ -27,9 +27,9 @@ setup(
         "License :: OSI Approved :: MIT License",
     ],
     python_requires=">=3",
-    install_requires=[
-        "colorama"
-    ],
+#    install_requires=[
+#        "colorama"
+#    ],
     entry_points={
         "console_scripts": [
             "qtkanobu=qtkanobu.__main__:main",
