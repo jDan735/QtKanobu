@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
-from qtkanobu.mainwindow import design
-from qtkanobu.result import resdesign
+import design
+import resdesign
 import random
     
 class QtKanobu(QtWidgets.QMainWindow, design.Ui_MainWindow):
@@ -75,5 +75,5 @@ def main():
     window.show()
     app.exec_()
     
-if __file__ == "__main__":
+if __name__ == "__main__":
     main()

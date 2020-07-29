@@ -56,4 +56,4 @@ class Ui_Dialog(object):
         self.label_2.setText(_translate("Dialog", "You win!"))
         self.label_3.setText(_translate("Dialog", "Rock VS. paper"))
         self.pushButton.setText(_translate("Dialog", "OK"))
-import qtkanobu.result.resources_rc
+import resources_rc

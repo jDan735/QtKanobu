@@ -64,4 +64,4 @@ class Ui_MainWindow(object):
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.actionAbout_Qt.setText(_translate("MainWindow", "About Qt"))
         self.actionAbout_QtKanobu.setText(_translate("MainWindow", "About QtKanobu"))
-import qtkanobu.mainwindow.resources_rc
+import mainwindow_rc
