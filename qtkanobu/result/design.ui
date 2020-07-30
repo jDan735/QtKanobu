@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/img/main/cut.hvif</normaloff>:/img/img/main/cut.hvif</iconset>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>

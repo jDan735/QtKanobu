@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="img">
+    <file>img/main/cut.hvif</file>
     <file>img/main/Misc_Birthday_Cake.png</file>
     <file>img/main/Misc_R.I.P.png</file>
     <file>img/main/Server_MediaAddonServer.png</file>

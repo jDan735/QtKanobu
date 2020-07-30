@@ -2,6 +2,8 @@ import sys
 from PyQt5 import QtWidgets
 import design
 import resdesign
+import aboutqt
+import aboutapp
 import random
     
 class QtKanobu(QtWidgets.QMainWindow, design.Ui_MainWindow):
@@ -12,10 +14,21 @@ class QtKanobu(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.pushButton_1.clicked.connect(lambda a : self.game(number=0))
         self.pushButton_2.clicked.connect(lambda a : self.game(number=1))
         self.pushButton_3.clicked.connect(lambda a : self.game(number=2))
+
+        self.actionAbout_Qt.triggered.connect(self.about_qt)
+        self.actionAbout_QtKanobu.triggered.connect(self.about_app)
         
     def game(self, number):
         result = Result(number)
         result.exec_()
+
+    def about_qt(self):
+        modal = AboutQt()
+        modal.exec_()
+
+    def about_app(self):
+        modal = AboutApp()
+        modal.exec_()
         
 class Result(QtWidgets.QDialog, resdesign.Ui_Dialog):
     def __init__(self, number):
@@ -66,6 +79,20 @@ class Result(QtWidgets.QDialog, resdesign.Ui_Dialog):
             self.label_2.setText("Draw!")
             
         self.label_3.setText(objects[number] + " VS. " + objects[bot])
+        
+        self.pushButton.clicked.connect(self.close)
+
+class AboutQt(QtWidgets.QDialog, aboutqt.Ui_Dialog):
+    def __init__(self):
+        super(AboutQt, self).__init__()
+        self.setupUi(self)
+        
+        self.pushButton.clicked.connect(self.close)
+
+class AboutApp(QtWidgets.QDialog, aboutapp.Ui_Dialog):
+    def __init__(self):
+        super(AboutApp, self).__init__()
+        self.setupUi(self)
         
         self.pushButton.clicked.connect(self.close)
 

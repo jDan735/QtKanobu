@@ -1,1 +1,2 @@
-pyinstaller __main__.py --onefile --noconsole --icon cut.hvif.ico 
+@echo off
+pyinstaller __main__.py --onefile --noconsole --icon qtkanobu.ico
