@@ -15,7 +15,7 @@ setup(
     keywords="kanobu qt game",
     url="https://github.com/jDan735/qtkanobu",
     license="MIT",
-    include_package_data=True,
+    #nclude_package_data=True,
     packages=["qtkanobu"],
     classifiers=[
         "Programming Language :: Python :: 3",

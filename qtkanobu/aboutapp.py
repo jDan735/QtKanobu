@@ -15,7 +15,7 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.setWindowModality(QtCore.Qt.WindowModal)
-        Dialog.resize(300, 210)
+        Dialog.resize(301, 212)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -62,7 +62,7 @@ class Ui_Dialog(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_3.setFont(font)
-        self.label_3.setStyleSheet("color:#555")
+        self.label_3.setStyleSheet("")
         self.label_3.setObjectName("label_3")
 
         self.retranslateUi(Dialog)
@@ -72,16 +72,16 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "About"))
         self.label.setText(_translate("Dialog", "<html><head/><body><p><img src=\":/default/img/app/cut.hvif\"/></p></body></html>"))
-        self.label_2.setText(_translate("Dialog", "QtKanobu"))
+        self.label_2.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:24pt; color:#00aa00;\">Qt</span><span style=\" font-size:24pt;\">Kanobu</span></p></body></html>"))
         self.textBrowser.setHtml(_translate("Dialog", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">Qt port of original kanobu</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Noto Sans Display\'; font-size:8.75pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Noto Sans Display\'; font-size:8.75pt;\">© 2020 @jDan734</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Noto Sans Display\'; font-size:8.75pt;\"><br /></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Noto Sans Display\'; font-size:8.75pt;\"><br /></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Noto Sans Display\'; font-size:8.75pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Noto Sans Display\'; font-size:8.75pt;\">Distributed on MIT license terms.</span></p></body></html>"))
         self.pushButton.setText(_translate("Dialog", "OK"))
-        self.label_3.setText(_translate("Dialog", "Version 0.1.1"))
+        self.label_3.setText(_translate("Dialog", "<html><head/><body><p><span style=\" color:#282828;\">Versio</span><span style=\" color:#424242;\">n 0.1.</span><span style=\" color:#282828;\">1</span></p></body></html>"))
 import aboutapp_rc

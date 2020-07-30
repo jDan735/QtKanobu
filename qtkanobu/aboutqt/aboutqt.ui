@@ -92,9 +92,9 @@
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>20</y>
+     <y>10</y>
      <width>91</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="font">
@@ -104,8 +104,11 @@
      <bold>false</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
-    <string>Qt</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#00aa00;&quot;&gt;Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser">
@@ -179,7 +182,7 @@ p, li { white-space: pre-wrap; }
     <string notr="true">color:#555</string>
    </property>
    <property name="text">
-    <string>Version 5.15.0</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#424242;&quot;&gt;Version 5.15.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

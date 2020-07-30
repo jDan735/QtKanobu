@@ -41,12 +41,13 @@ class Ui_Dialog(object):
         self.label.setGeometry(QtCore.QRect(10, 10, 71, 71))
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(Dialog)
-        self.label_2.setGeometry(QtCore.QRect(80, 20, 91, 31))
+        self.label_2.setGeometry(QtCore.QRect(80, 10, 91, 41))
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(False)
         font.setWeight(50)
         self.label_2.setFont(font)
+        self.label_2.setStyleSheet("")
         self.label_2.setObjectName("label_2")
         self.textBrowser = QtWidgets.QTextBrowser(Dialog)
         self.textBrowser.setGeometry(QtCore.QRect(80, 80, 381, 241))
@@ -74,7 +75,7 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "AboutQt"))
         self.label.setText(_translate("Dialog", "<html><head/><body><p><img src=\":/default/img/app/qt\"/></p></body></html>"))
-        self.label_2.setText(_translate("Dialog", "Qt"))
+        self.label_2.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:24pt; color:#00aa00;\">Qt</span></p></body></html>"))
         self.textBrowser.setHtml(_translate("Dialog", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -89,5 +90,5 @@ class Ui_Dialog(object):
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt;\">Qt and the Qt logo are trademarks of The Qt Company Ltd.</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt;\">Qt is The Qt Company Ltd product developed as an open source project. See </span><a href=\"http://qt.io/\"><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt; text-decoration: underline; color:#3366bb;\">qt.io</span></a><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt;\"> for more information.</span></p></body></html>"))
         self.pushButton.setText(_translate("Dialog", "OK"))
-        self.label_3.setText(_translate("Dialog", "Version 5.15.0"))
+        self.label_3.setText(_translate("Dialog", "<html><head/><body><p><span style=\" color:#424242;\">Version 5.15.0</span></p></body></html>"))
 import aboutqt_res_rc
