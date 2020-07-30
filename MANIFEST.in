@@ -1,2 +1,1 @@
-recursive-include qtkanobu/mainwindow *.py
-recursive-include qtkanobu/result *.py
+recursive-include qtkanobu/ *.py
