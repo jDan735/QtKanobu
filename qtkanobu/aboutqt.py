@@ -91,4 +91,7 @@ class Ui_Dialog(object):
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt;\">Qt is The Qt Company Ltd product developed as an open source project. See </span><a href=\"http://qt.io/\"><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt; text-decoration: underline; color:#3366bb;\">qt.io</span></a><span style=\" font-family:\'Noto Sans Display\'; font-size:9pt;\"> for more information.</span></p></body></html>"))
         self.pushButton.setText(_translate("Dialog", "OK"))
         self.label_3.setText(_translate("Dialog", "<html><head/><body><p><span style=\" color:#424242;\">Version 5.15.0</span></p></body></html>"))
-import aboutqt_res_rc
+try:
+    from . import aboutqt_res_rc
+except:
+    import aboutqt_res_rc

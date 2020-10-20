@@ -60,4 +60,7 @@ class Ui_Dialog(object):
         self.label_2.setText(_translate("Dialog", "You win!"))
         self.label_3.setText(_translate("Dialog", "Rock VS. paper"))
         self.pushButton.setText(_translate("Dialog", "OK"))
-import resources_rc
+try:
+    from . import resources_rc
+except:
+    import resources_rc

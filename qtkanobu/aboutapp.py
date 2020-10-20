@@ -84,4 +84,7 @@ class Ui_Dialog(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Noto Sans Display\'; font-size:8.75pt;\">Distributed on MIT license terms.</span></p></body></html>"))
         self.pushButton.setText(_translate("Dialog", "OK"))
         self.label_3.setText(_translate("Dialog", "<html><head/><body><p><span style=\" color:#282828;\">Versio</span><span style=\" color:#424242;\">n 0.1.</span><span style=\" color:#282828;\">2</span></p></body></html>"))
-import aboutapp_rc
+try:
+    from . import aboutapp_rc
+except:
+    import aboutapp_rc
