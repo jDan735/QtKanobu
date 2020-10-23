@@ -1,1 +1,1 @@
-recursive-include qtkanobu/ *.py
+recursive-exclude qtkanobu *.py
