@@ -1,5 +1,6 @@
-# qtkanobu
+# QtKanobu
 Qt port of kanobu
+
 ![qtkanobu interface](https://github.com/jdan735/qtkanobu/blob/master/qtkanobu.jpg?raw=true)
 
 ## 🚀 Start
